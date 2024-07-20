@@ -18,6 +18,9 @@ EmotiScan is a web app that uses machine learning to analyze emotions in text. B
 
 You can access the live project [here](https://sentiment-analysis-khaki.vercel.app).
 
+## Model Used
+
+I have used this model to classify the emotions: [SamLowe/roberta-base-go_emotions](https://huggingface.co/SamLowe/roberta-base-go_emotions)
 
 ## Features
 
