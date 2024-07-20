@@ -1,7 +1,12 @@
 {
-  "name": "tweet-analysis",
+  "name": "sentiment-analysis",
   "version": "0.1.0",
-  "private": true,
+  "private": false,
+  "author": {
+    "name": "Mohammed Hamza"
+  },
+  "description": "Sentiment Analysis using Hugging Face API",
+  "live-url":"https://sentiment-analysis-khaki.vercel.app/",
   "scripts": {
     "dev": "next dev",
     "build": "next build",
