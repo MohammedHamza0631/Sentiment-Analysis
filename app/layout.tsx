@@ -19,8 +19,6 @@ export default function RootLayout({
     <html lang="en">
       <Head>
         <link rel="icon" href="/favicon.ico" />
-        <link rel="icon" sizes="180x180" href="/newIcon.png" />
-        <link rel="manifest" href="/site.webmanifest" />
       </Head>
       <body className={inter.className}>{children}</body>
     </html>
