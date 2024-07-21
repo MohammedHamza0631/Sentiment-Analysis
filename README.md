@@ -1,36 +1,97 @@
-This is a [Next.js](https://nextjs.org/) project bootstrapped with [`create-next-app`](https://github.com/vercel/next.js/tree/canary/packages/create-next-app).
+# EmotiScan
 
-## Getting Started
+## Table of Contents
 
-First, run the development server:
+- [Introduction](#introduction)
+- [Live Link](#live-link)
+- [Features](#features)
+- [Technologies Used](#technologies-used)
+- [Installation](#installation)
+- [Usage](#usage)
+- [License](#license)
 
-```bash
-npm run dev
-# or
-yarn dev
-# or
-pnpm dev
-# or
-bun dev
-```
+## Introduction
 
-Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
+EmotiScan is a web app that uses machine learning to analyze emotions in text. By leveraging the power of Hugging Face's models. This application provides an intuitive way to visualize and understand the emotions conveyed in any given text input.
 
-You can start editing the page by modifying `app/page.tsx`. The page auto-updates as you edit the file.
+## Live Link
 
-This project uses [`next/font`](https://nextjs.org/docs/basic-features/font-optimization) to automatically optimize and load Inter, a custom Google Font.
+You can access the live project [here](https://sentiment-analysis-khaki.vercel.app).
 
-## Learn More
+## Model Used
 
-To learn more about Next.js, take a look at the following resources:
+I have used this model to classify the emotions: [SamLowe/roberta-base-go_emotions](https://huggingface.co/SamLowe/roberta-base-go_emotions)
 
-- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
-- [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
+## Features
 
-You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js/) - your feedback and contributions are welcome!
+- Real-time emotion detection and visualization
+- Dynamic background color changes based on detected emotions
+- Easy-to-use text input with automatic height adjustment
+- Real-time loading indicators
 
-## Deploy on Vercel
+## Technologies Used
 
-The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
+- Next.js
+- Tailwind CSS
+- ShadCN UI components
+- Hugging Face API
+- TypeScript
+- Bun for faster build and start times
 
-Check out our [Next.js deployment documentation](https://nextjs.org/docs/deployment) for more details.
+
+## Installation
+
+To get started with EmotiScan, follow these steps:
+
+1. **Clone the repository:**
+
+    ```bash
+    git clone https://github.com/your-username/sentiment-analysis.git
+    cd sentiment-analysis
+    ```
+
+2. **Install dependencies using Bun/NPM/Yarn/PNPM:**
+
+    ```bash
+    npm install
+    # or
+    yarn install
+    # or
+    pnpm install
+    # or
+    bun install
+    ```
+
+3. **Run the application:**
+
+    ```bash
+    npm dev
+    # or
+    yarn dev
+    # or
+    pnpm dev
+    # or
+    bun dev
+    ```
+
+    The application will be available at `http://localhost:3000`.
+
+## Usage
+
+1. Open the application in your browser.
+2. Enter your text in the provided textarea.
+3. The detected emotions will be displayed with corresponding colors and emojis.
+4. The background color of the page will change based on the predominant emotion.
+   
+>Note: You may see one or two more emotions which are reflected by the entered text but the first emotion is the predominant one.
+
+| ![image](https://github.com/user-attachments/assets/f8a885f9-6cdb-4a76-b6ef-da4bc0e1e8f8) | ![image](https://github.com/user-attachments/assets/e067b447-ea64-47d6-bf0a-7b10c4d37c8f) |
+|:--:|:--:|
+
+
+## License
+
+This project is licensed under the MIT License. See the [LICENSE](LICENSE) file for details.
+
+
+Happy analyzing! 😊
